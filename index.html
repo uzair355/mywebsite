@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="css/logo.png" alt="logo">
+            </div>
+
+            <!-- hamburger for small screens -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <div class="search">
+                <input type="text" placeholder="Search for Products, Brand and More" aria-label="Search">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="slider">
+                <img src="prp1.avif" alt="slider image">
+            </section>
+
+            <section class="card">
+                <h2>Join the Cricket fun</h2>
+                <div class="card-items">
+                    <div class="card-item">
+                        <img src="shahid.jpeg" alt="Cricket Bats">
+                        <div class="lines">
+                            <p>Cricket Bats</p>
+                            <p>Min 25% Off</p>
+                            <p>Grab Now</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="tracksuit.jpeg" alt="Cricket TrackSuits">
+                        <div class="lines">
+                            <p>Cricket TrackSuits</p>
+                            <p>Min 40% Off</p>
+                            <p>Buy Now</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="wickets.jpeg" alt="Cricket Wickets">
+                        <div class="lines">
+                            <p>Cricket Wickets</p>
+                            <p>Min 20% Off</p>
+                            <p>Grab Now</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="shoes.jpeg" alt="Sports Shoes">
+                        <div class="lines">
+                            <p>Sports Shoes</p>
+                            <p>Min 50% Off</p>
+                            <p>Shop Now</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="balls.jpeg" alt="Cricket Balls">
+                        <div class="lines">
+                            <p>Cricket Balls</p>
+                            <p>Min 10% Off</p>
+                            <p>Buy Now</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="chips.jpeg" alt="Chips">
+                        <div class="lines">
+                            <p>Chips</p>
+                            <p>Min 40% Off</p>
+                            <p>Grab Now</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="popcorn.jpeg" alt="Popcorn">
+                        <div class="lines">
+                            <p>Popcorn</p>
+                            <p>Buy One get One free</p>
+                            <p>Get Now</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="flex-all-center">
+        <p> copyright &copy; My Cart.com </p>
+    </footer>
+
+    <!-- Small JS to toggle mobile menu (keeps structure same) -->
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('open');
+            document.querySelector('.search').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
